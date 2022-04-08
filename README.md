@@ -12,7 +12,7 @@ Download the zip folder and open on XCode.
 ## Implementation decisions and trade-offs I made:
 
 I implemented a table view with a list of significant move events and the time passed from that event. Every 10 meters or so, the app will display a message and a new event will appear on the table view. I added buttons to the map so the user can zoom in and out. The application is intended to work mostly in the foreground.
-I did mention method ``startMonitoringSignificantLocationChanges()`` in ``viewDidLoad()`` both for background location tracking and also for more power-friendly activities. However, since I suspect it would not track movements as short as 10 meters, I mostly relied on ``didUpdateLocations`` instead. I did set ``pausesLocationUpdatesAutomatically`` to ``true`` to save battery life when the user is unlikely to move.
+I originally planned to use the method ``startMonitoringSignificantLocationChanges()`` in ``viewDidLoad()`` both for background location tracking and also for more power-friendly activities. However, since I suspect it would not track movements as short as 10 meters, I mostly relied on ``didUpdateLocations`` instead.
 
 
 ## Any architectural considerations and reasonings:

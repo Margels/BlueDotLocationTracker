@@ -1,6 +1,8 @@
 # BlueDotLocationTracker
 This app tracks the user's precise location. It also keeps track of the user's movements and records an event every 10 meters or so.
 
+![Presentation-2](https://user-images.githubusercontent.com/89708428/162340674-b67a92a8-586f-4dc9-9f57-483e1dac54f7.gif)
+
 
 
 ## How to run the project:
